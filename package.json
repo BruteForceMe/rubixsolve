@@ -1,0 +1,16 @@
+{
+  "name": "rubiks-cube-solver",
+  "version": "1.0.0",
+  "description": "Rubik's Cube Solver with 3D Three.js frontend and Express C++ IDA* backend",
+  "scripts": {
+    "dev": "node dev-runner.js",
+    "start": "node dev-runner.js",
+    "backend": "node backend/server.js",
+    "frontend": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "compile-solver": "cd backend && g++ -O3 solver.cpp -o solver.exe"
+  },
+  "keywords": ["rubiks-cube", "solver", "threejs", "react", "express", "cpp"],
+  "author": "",
+  "license": "ISC"
+}
